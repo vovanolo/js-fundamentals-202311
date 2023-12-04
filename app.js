@@ -390,3 +390,413 @@
 // })
 
 // console.log(newPeople);
+
+
+// (3,6)
+
+// 3
+// 4 4
+// 5 5 5
+// 6 6 6 6
+
+// for(let i = 0; i < 10; i++){
+//     for(let j = 0; j < 10; j++){
+//         // console.log(i);
+//         console.log(j);
+//     }
+// }
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+
+
+// let result = numbers.reduce(function(sum, element){
+//     // console.log(element);
+//     return sum + element;
+// }, 0);
+
+// let sum = 0;
+// for(let element of numbers){
+//     sum += element;
+// }
+
+// console.log(result);
+
+
+// forEach map filter, find - 1 -element 2- index 3 - array
+// reduce  1 - acc 2 - element 3 - index 4 -array
+
+// let newarray = [];
+// for(let element of array){
+//     if(element % 2 === 0 || element % 3 === 0){
+//         newarray.push(element);
+//     }
+// }
+
+
+// console.log(!(13 % 13));
+
+// console.log()
+// let x = 10;
+// let y = 10;
+// let z = x + y;
+// console.log(z);
+
+
+// breakpoint
+
+// let x = 10;
+// let y = 10;
+// let z = x + y;
+// console.log(z);
+
+// for (let i = 0; i < 10; i++){
+//     console.log(i);
+// }
+
+// try{
+
+// }catch(e){
+
+// }
+
+// syntaxError
+
+// console.log(;
+
+// runtime ReferenceError
+
+// printMe();
+
+// Logic errors
+
+// try{
+//     console.log("hello from try section first");
+//     printMe();
+//     console.log("hello from try section second")
+// }catch(e){
+//     console.log("hello from catch section");
+// }
+
+// try{
+//     console.log("hello from try section first");
+//     printMe();
+//     console.log("hello from try section second")
+// }catch(e){
+//     // console.log(e);
+//     console.log(e.name);
+//     console.log(e.message);
+//     console.log(e.stack);
+// }
+
+// new Error("Invalid data");
+// new SyntaxError("Invalid text");
+// new RangeError("Wrong range");
+
+// throw new Error("Invalid data");
+
+// try{
+//     let age = +prompt("Please enter your age");
+//     if(age < 18){
+//         throw new Error("Invalid age");
+//     }
+//     console.log("welcome")
+// }catch(e){
+//     console.log(e.message);
+// }
+
+// try{
+//     let age = +prompt("Please enter your age 18 - 30");
+//     if(age < 18 || age > 30){
+//         throw new RangeError("Wrong age range, must be 18-30");
+//     }
+//     console.log("welcome")
+// }catch(e){
+//     console.log(e.message);
+// }
+
+
+// try{
+//     let age = +prompt("Please enter your age 18 - 30");
+//     if(age < 18 || age > 30){
+//         throw new RangeError("Wrong age range, must be 18-30");
+//     }
+//     console.log("welcome")
+// }catch(e){
+//     console.log(e.message);
+// }finally{
+//     console.log("Finaly");
+// }
+
+// class NumberError extends Error {
+//     constructor(message){
+//         super(message);
+//         this.name = "NumberError"
+//     }
+// }
+
+// try{
+//     let number = +prompt("enter a number 3");
+//     if(number !== 3){
+//         throw new NumberError("Wrong number");
+//     }
+// }catch(e){
+//     console.log(e.stack);
+// }
+
+
+// обєкт
+
+// const user = new Object();
+
+// const user = {
+//     // key: value
+//     name: "John",
+//     surname: "Johnenko",
+//     age: 26,
+//     // name: "Peter"
+// }
+
+// let name = "name";
+
+// console.log(user);
+// console.log(user.name);
+// console.log(user.age);
+// console.log(user["name"]);
+
+// user.name = "Peter";
+// user.middleName = "Johnson";
+
+// delete user.name;
+
+// console.log(user);
+
+
+
+// const user = {
+//     name: "John",
+//     age: 26,
+//     friends: ["John", "Peter"],
+//     // showFullName: function(){
+//     //     console.log(user.name);
+//     // }
+//     showFullName: function(){
+//         console.log(this.name);
+//     }
+
+// }
+
+// user.showFullName();
+// let friends = user.friends
+// friends.map(function(element){
+//     console.log(element);
+// })
+
+
+// let users = [
+//     {
+//         name: "John",
+//         age:26,
+//     },
+//     {
+//         name: "Peter",
+//         age:26,
+//     },
+// ]
+
+// 
+// const user = {......}
+
+// class
+
+// class User {
+//     constructor(name, age, surname){
+//         this.name = name;
+//         this._age = age;
+//         this.surname = surname;
+//     }
+//     // getter
+//     // setter
+//     get age(){
+//         console.log(this._age);
+//     }
+
+//     set age(value){
+//         if(value < 0){
+//             alert("Please enter a valid age")
+//         }else{
+//             this._age = value;
+//         }
+//     }
+
+
+
+//     showName(){
+//         console.log(this.name);
+//     }
+
+// }
+
+// const user1 = new User("John", 26, "Johnenko");
+// user1.age = 23;
+// console.log(user1.name);
+// user1.name = "John";
+// user1.showName();
+// const user2 = new User("Peter", 26, "Peterson");
+// user2.showName();
+// const user3 = new User("John", 26, "Johnenko");
+// const user4 = new User("John", 26, "Johnenko");
+
+
+
+
+// console.log(user1);
+
+// Наслідування
+// Поліморфізм
+// Інкапсуляція
+
+
+// const title = document.getElementById("title");
+// const headers = document.querySelectorAll(".header");
+
+// console.log(title);
+// console.log(headers[0]);
+
+// const list = document.querySelector(".list");
+
+// console.log(list);
+// console.log(list.childNodes);
+// console.log(list.children);
+// console.log(list.children[0]);
+// console.log(list.firstElementChild);
+// console.log(list.lastElementChild);
+// console.log(list.firstElementChild.nextElementSibling);
+// console.log(list.lastElementChild.previousElementSibling);
+
+
+// const box = document.querySelector(".box");
+
+// console.log(box.innerHTML);
+// box.innerHTML = "<h1>text from js</h1>";
+// box.innerHTML = `<h1>text from js</h1>
+// <span>text from js</span>
+// <button>text</button>
+// ` 
+// !!!!!!!!
+
+// outerHTML 
+// console.log(box.outerHTML);
+// box.outerHTML = "<h1>text from js</h1>";
+
+// const input = document.querySelector(".inp");
+
+// console.log(input);
+// input.type = "submit";
+// input.placeholder = "new enter"
+// input.className = "new-input";
+// console.log(input.type)
+// input.setAttribute("type", "submit");
+// input.classList.add("new-input");
+// input.classList.toggle("new-input");
+
+// const myElement = document.createElement("h1");
+
+// myElement.innerHTML = "title";
+
+// myElement.classList.add("title");
+
+// console.log(myElement);
+// document.body.appendChild(myElement);
+// document.body.prepend(myElement);
+// document.body.innerHTML = `<h1 class="title">title</h1>`
+// document.body.innerHTML += `<h1 class="title">title</h1>`
+// const content = document.querySelector(".content");
+// content.innerHTML += `<h1 class="title">title</h1>`;
+
+
+// const title = document.querySelector(".title");
+
+// title.style.color = "red";
+// title.style.backgroundColor = "green";
+
+// let numbers = [12,3,4,5,7,8,9];
+
+// Math.min(...numbers);
+
+// let newWindow = window.open("http://google.com", "", "height=500, width=500, top=200, left=200");
+
+
+// newWindow.resizeTo(700, 1000);
+// newWindow.moveTo(100, 700);
+
+// newWindow.close();
+
+// console.log(window.innerHeight);
+// console.log(window.innerWidth);
+
+
+
+// function sayHello(){
+//     alert("Hello");
+// }
+
+
+
+// title.onclick = function(){
+//     alert("Hello");
+// }
+
+// title.addEventListener("click", function(){
+//     console.log("i was clicked");
+// })
+
+// function sayHello(){
+//     console.log("Hello");
+// }
+
+// title.addEventListener("click", sayHello);
+
+// title.addEventListener("click", function(event){
+//     // console.log(event.type);
+//     // console.log(event.target);
+//     event.target.style.color = "red";
+// })
+
+// let title = document.querySelector(".title");
+
+// const btn = document.querySelector(".btn");
+
+
+// btn.addEventListener("click", function(){
+//     title.style.color = "green";
+// })
+
+// const btn = document.querySelector(".btn");
+
+// const name = document.querySelector(".name");
+
+// const result = document.querySelector(".result");
+
+// btn.addEventListener("click", function(){
+//     // alert(`The user ${name.value} was registered`)
+//     // console.log(name.value);
+//     result.innerHTML = `The user ${name.value} was registered`
+// })
+
+// const registerForm = document.querySelector(".registerForm");
+// const result = document.querySelector(".result");
+
+
+// registerForm.addEventListener("submit", function(event){
+//     event.preventDefault();
+//     // console.log("form work");
+//     // console.log(event.target.elements.name.value);
+//     // console.log(event.target.elements.password.value);
+//     result.innerHTML += `Welcome ${event.target.elements.name.value} ${event.target.elements.password.value}<br />`;
+//     event.target.reset();
+
+// })
+
+// setTimeout(function(){
+//     console.log("hello");
+// }, 5000);
