@@ -800,3 +800,44 @@
 // setTimeout(function(){
 //     console.log("hello");
 // }, 5000);
+
+// const regExp = /hello/;
+// const regExp = /hello/g; // g - global search, i - not case sensitive,
+// m - multiline search
+// const regExp = /hello/gi; 
+
+
+
+// const str = "Hello guys Hello guys Hello guys";
+
+// test() match()
+
+// console.log(regExp.test(str));
+// console.log(str.match(regExp));
+// console.log(typeof regExp);
+
+// const regExp = /[abcd]/;
+// a або b або c або d
+// const regExp = /[a-d]/;
+// const regExp = /[A-D]/g;
+// const regExp = /[0-5]/g;
+// const regExp = /[a-d0-5]/g;
+// const regExp = /[^a-d0-5]/g;
+// const regExp = /\d/g; // [0-9]
+
+
+
+
+
+
+
+
+// const str = "hello hello 2232424124.34353535";
+// console.log(str.match(/\d{3}\.\d{3}/));
+// console.log(str.match(/\d+\.\d+/));
+// console.log(str.match(/\d+\.\d*/));
+// console.log(str.match(/\d+\.?\d*/));
+
+
+
+
