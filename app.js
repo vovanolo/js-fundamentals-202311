@@ -840,4 +840,33 @@
 
 
 
+// $(document).ready(function(){
+
+// })
+
+$(function(){
+
+//    $(".btn").on("click", function(event){
+//         // console.log("clicked");
+//         // console.log(event.target);
+//         // event.target.css("color", "green");
+//         // $(".btn").css("color", "green");
+        
+       
+//         // event.target.style.color = "green"
+//         $(".result").append("<span>New Span</span>");
+//    }) 
+
+//  $.ajax({
+//     url: "https://jsonplaceholder.typicode.com/users",
+//     dataType: "json",
+//     success: function(usersList){
+//         console.log(usersList[1].name);
+//     }
+//  })
+
+
+// })
+
+
 
