@@ -844,7 +844,7 @@
 
 // })
 
-$(function(){
+// $(function(){
 
 //    $(".btn").on("click", function(event){
 //         // console.log("clicked");
@@ -870,3 +870,105 @@ $(function(){
 
 
 
+// const sayHello = function(){
+//     console.log("Hello");
+// }
+
+// sayHello();
+
+// const sayHello = () => {
+//     console.log("Hello");
+// }
+
+// sayHello();
+
+// const sayHello = message => {
+//     console.log(message);
+// }
+
+// sayHello();
+
+// const sum = (a,b) => a + b;
+
+// sayHello();
+
+// let numbers = [1,2,3,4,5,6,7,8];
+
+// numbers.map(function(number){
+//     console.log(number);
+// })
+// numbers.map(function(number){
+//     return number + 2;
+// })
+
+// numbers.map(number => number + 2);
+// let numbers = [1,2,3,4,5,6,7,8];
+// let copyOfNumbers = [...numbers];
+
+// Дуструктуризація
+
+
+// масивів
+
+// const names = ["Ivan", "John", "Petro", "Vasyl"];
+
+// // names[1];
+// // const [name1,name2,name3,name4] = names;
+// // const [name1,,,name4] = names;
+// const [name1, ...restOfNames] = names;
+
+
+
+// console.log(name1);
+// // console.log(name4);
+// console.log(restOfNames);
+
+// обєктів
+
+
+const user = {
+    // name: "John",
+    age: 34,
+    surName: "Johnenko",
+    city: "Kyiv",
+    friends: ["Ivan", "John", "Petro", "Vasyl"]
+}
+
+// const {name, city} = user;
+
+// const {name: n, city: c} = user;
+// const {name: n, city: c, friends} = user;
+
+// const [friend1, friend2] = friends;
+
+
+// console.log(name, city);
+// console.log(n, c);
+
+// console.log(friend1);
+// console.log(friends);
+
+// function outputName(object){
+//     console.log(`${object.name} ${object.surName}`);
+// }
+// function outputName({name, surName}){
+//     console.log(`${name} ${surName}`);
+// }
+
+// outputName(user);
+
+
+// const {name = "defaultName", age} = user;
+
+// console.log(name);
+
+// const newMap = new Map([
+//     ["key", "value"],
+//     ["key1", "value1"],
+// ])
+
+// newMap.set("key2", "value2");
+// // newMap.clear()
+// newMap.delete("key1");
+
+// console.log(newMap);
