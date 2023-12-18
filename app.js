@@ -972,3 +972,128 @@ const user = {
 // newMap.delete("key1");
 
 // console.log(newMap);
+
+// console.log("1");
+
+// console.log("2");
+
+// // setTimeout, setInterval
+// setTimeout(() => {
+//     console.log("3");
+// });
+
+
+// console.log("5");
+
+// function sum(a, b){
+//     return a + b;
+// }
+
+// sum(2,3);
+
+// function sum(a, b){
+//     return new Promise((resolve,reject) => {
+//         resolve(a + b);
+//     })
+// }
+
+// sum(2,3).then((result) => console.log(result));
+
+// console.log(sum(2,3));
+
+// function sum(a, b){
+//     return new Promise((resolve,reject) => {
+//         if(a > 0){
+//             resolve(a + b);
+//         }else{
+//             reject("First value 0 <");
+//         }
+//     })
+// }
+
+// sum(-2,3).then((result) => console.log(result))
+//          .catch((error) => console.log(error));
+// sum(-2,3).then((result) => console.log(result), (error) => console.log(error));
+
+
+// function sum(a, b){
+//     return new Promise((resolve,reject) => {
+//         if(a > 0){
+//             resolve(a + b);
+//         }else{
+//             reject("First value 0 <");
+//         }
+//     })
+// }
+
+
+// sum(2,3).then((result) => result + 5)
+//         .then((result) => result + 5)
+//         .then((result) => console.log(result));
+
+// function sum(a, b){
+//     return new Promise((resolve,reject) => {
+//         if(a > 0){
+//             resolve(a + b);
+//         }else{
+//             reject("First value 0 <");
+//         }
+//     })
+// }
+
+
+// sum(2,3).then((result) => result + 5)
+//         .then((result) => sum(20,20))
+//         .then((result) => console.log(result));
+
+
+// async function sum(a, b){
+//     return a + b;
+// }
+
+// sum(2,3).then((result) => console.log(result));
+// // console.log(sum(2,3));
+
+// const sum = new Promise((resolve,reject) => {resolve(2+3)})
+
+// async function func(){
+//     let result = await sum;
+//     console.log(result);
+// }
+
+// func();
+// const doSomethingAsync = () => { return new Promise(resolve => {
+//     setTimeout(() => resolve("I did something"), 2000);
+//     });
+//     };
+    
+//     const doSomething = async () => {
+//     console.log(await doSomethingAsync());
+//     };
+    
+//     console.log("Before"); 
+//     doSomething(); 
+//     console.log("After");
+    
+
+// function sum(a, b){
+//     return new Promise((resolve,reject) => {
+//         if(a > 0){
+//             resolve(a + b);
+//         }else{
+//             reject("First value 0 <");
+//         }
+//     })
+// }
+
+
+// sum(-2,3).then((result) => result + 5)
+//         .catch((err) => {
+//             console.log(err);
+//             return sum(5,5);
+//         })
+//         .then((result) => console.log(result));
+
+import {name} from "./task.js";
+
+console.log(name);
