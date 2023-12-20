@@ -1094,6 +1094,43 @@ const user = {
 //         })
 //         .then((result) => console.log(result));
 
-import {name} from "./task.js";
+// import {name} from "./task.js";
 
-console.log(name);
+// console.log(name);
+
+
+// console.log("hello guys!");
+
+// alert("hello");
+
+// const fs = require("fs");
+
+// fs.readFile("./text.txt", (error, data) => {
+//     console.log(data.toString());
+// })
+
+const http = require("http");
+
+// http.createServer((request, response) => {
+//     response.writeHead(200, {"Content-Type": "text/plain"});
+//     response.write("Hello from server! Everybody");
+//     response.end();
+// }).listen(8000);
+
+http.createServer((request, response) => {
+    response.writeHead(200, {"Content-Type": "text/html"});
+    // response.write("<h1>Hello from server! Everybody</h1>");
+    response.write(`
+    <div>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </div>
+    `);
+
+    response.end();
+}).listen(8000);
+
+console.log("Server is runnig at port http://localhost:8000");
